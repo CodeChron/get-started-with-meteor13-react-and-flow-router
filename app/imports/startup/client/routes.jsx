@@ -3,13 +3,13 @@ import React from 'react'
 import { mount } from 'react-mounter'
 
 //Templates
-import {AppContainer} from '../../ui/global/app_container'
+import {MainLayout} from '../../ui/layouts/main_layout'
 import {Homepage} from '../../ui/pages/homepage'
 
 FlowRouter.route('/', {
   name: 'homepage',
   action() {
-    mount(AppContainer, {
+    mount(MainLayout, {
       content: <Homepage />
     })
   }
