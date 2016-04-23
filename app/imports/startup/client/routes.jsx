@@ -1,5 +1,7 @@
 import {FlowRouter} from 'meteor/kadira:flow-router'
 import React from 'react'
+
+//Note that the need for this package is new for Meteor 1.3.  If you are using an older version of Meteor, you'd use the React-Layout package
 import { mount } from 'react-mounter'
 
 //Note that we are not enclosing this object in curly braces.  This is because it was exported as the default.  It also allows us to rename it in place.  We could call this BaconContainer if we wanted.
