@@ -4,7 +4,6 @@ import { mount } from 'react-mounter'
 
 //Note that we are not enclosing this object in curly braces.  This is because it was exported as the default.  It also allows us to rename it in place.  We could call this BaconContainer if we wanted.
 import AppContainer from '../../ui/containers/app_container'
-// import AppContainer from '../../ui/containers/app_container'
 
 //We also need to import all pages we'll be using for our routes
 import {Homepage} from '../../ui/pages/homepage'
