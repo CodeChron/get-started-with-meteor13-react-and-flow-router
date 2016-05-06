@@ -1,12 +1,9 @@
 import React from 'react'
 
-//Here we are passing in the props from our route into our main layout file.  The name 'content' here corresponds to the prop name in the route.  We need to 'call' the prop, ie using '()', because it's return value is a function, and this is what allows for passing through props and returning props via callbacks.
-
+//Here we are passing in the props from our route into our main layout file.
+// Note that the FlowRouter docs recommend the syntax { region1, region2 } which just passes in those two args from the props object.  Instead, we want to pass in the entire object, which will also include our reactive data. 
 export const AppLayout = (props) => {
 
-	console.log("content: ", props.foo)
-
-	// const test = props.foo
-	
-	return <div>{props.content()}</div>
+  //here, we are referencing the route region as a property of props, calling it, and then passing along the props object as an arg so that reactive data can be accessed by the component associated with this region in the route definition
+	return <div>{props.content(props)}</div>
 }
