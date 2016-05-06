@@ -11,8 +11,7 @@ export default createContainer(() => {
 
 	//Our only reactive data source here is Meteor.user(), which returns null if no user is signed in, and the user object if they are.
   return {
-    signedIn,
-    foo: "bar"
+    signedIn
   }
 
 //As the second argument, we pass in the sub-component that will have access to this data via props
