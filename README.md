@@ -7,7 +7,7 @@ If you're new to Meteor (or to Meteor 1.3) and want to use it with React and Flo
 ## Instructions
 - Be sure you have [Meteor installed](https://www.meteor.com/install)
 - Clone this repo
-- Cd into the repo
+- Cd into the repo and the app folder
 - Install npm packages: ```meteor npm install```
 - Run the app by typing ```meteor```
 
